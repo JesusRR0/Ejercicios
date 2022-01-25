@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="cnumber">Card Number:</label>
+        <input type="text" name="cnumber" id="cnumber" required 
+        pattern="(?=.{8,}$)(?=[a-z]+)(?=[A-Z]+)(?=[0-9]+)(?!=.*\W)(?!=\W.*)(?!=(00|11|22|33|44|55|66|77|88|99)).*">
+
+        <input type="submit" value="OK">
+    </form>
+
+</body>
+</html>
