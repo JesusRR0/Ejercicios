@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="lang" content="es-Es">
+    <meta name="author" content="Mi Nombre">
+    <meta name="keywords" content="test, prueba">
+    <meta name="description" content="Formulario de prueba">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Introduzca Datos</h1>
+            <form name="miformulario" method="post" action="form.php">
+                <fieldset>
+                    
+                    <legend>Datos Personales</legend>
+                    <p>
+                        <label for="nombre">Nombre: </label>
+                        <input  type="text" name="nombre" id="nombre" size="40" required placeholder="Obligatorio">
+                    </p>
+                    <p>
+                        <label for="apellido">Apellidos: </label>
+                        <input  type="text" name="apellido" id="apellido" size="40" required placeholder="Obligatorio">                                                                                   
+                    </p>
+
+                    <fieldset>
+                        
+                        <legend>Edad:</legend>
+
+                        
+                        <input type="radio" name="edad" id="18">
+                        <label for="edad">18 a 25</label>
+
+                        <input type="radio" name="edad" id="26">
+                        <label for="edad">26 a 35</label>
+
+                        <input type="radio" name="edad" id="36">
+                        <label for="edad">36 a 45</label>
+
+                        <input type="radio" name="edad" id="46">
+                        <label for="edad">46 a 55</label>
+
+                        <input type="radio" name="edad" id="mayor55">
+                        <label for="edad">Mayor de 55</label>
+
+                        <input type="radio" name="edad" id="NS/NC">
+                        <label for="edad">NS/NC</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <legend>Intereses:</legend>
+                        <p>
+                            <label for="Arte">Arte y Literatura</label>
+                            <input type="checkbox" name="Arte" id="Arte">
+                        </p>     
+                        
+                        <p>
+                            <label for="Ciencia">Ciencia y Tecnología</label>
+                            <input type="checkbox" name="Ciencia" id="Ciencia">
+                        </p>
+                        
+                        <p>
+                            <label for="Politica">Política y Sociedad</label>
+                            <input type="checkbox" name="Politica" id="Politica">
+                        </p>
+                        
+                        <p>
+                            <label for="Ocio">Ocio y Deporte</label>
+                            <input type="checkbox" name="Ocio" id="Ocio">
+                        </p>
+                        
+                        <p>
+                            <label for="Cine">Cine y Television</label>
+                            <input type="checkbox" name="Cine" id="Cine">
+                        </p>
+                        
+                        
+                    </fieldset>
+
+                    <p>
+                        <label class="Postal" for="Postal">Código Postal:</label>
+                        <input class="inputP"type="text" name="Postal" id="Postal" required size="5">
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <h1> Color favorito</h1>
+                        
+                        <input type="radio" name="color" id="color">
+                        <label for="color">Rojo</label>
+                        
+                        <input type="radio" name="color" id="color">
+                        <label for="color">Azul</label>
+
+                        <input type="radio" name="color" id="color">
+                        <label for="color">Amarillo</label>
+
+                        <input type="radio" name="color" id="color">
+                        <label for="color">Verde</label>
+
+                    <h1>Asignaturas favoritas</h1>
+
+                    <p>
+                        <label for="DWEC">DWEC</label>
+                        <input type="checkbox" name="DWEC" id="DWEC">
+                    </p>
+                    
+                    <p>
+                        <label for="DWES">DWES</label>
+                        <input type="checkbox" name="DWES" id="DWES">
+                    </p>
+                    <p>
+                        <label for="DIW">DIW</label>
+                        <input type="checkbox" name="DIW" id="DIW" checked>
+                    </p>
+                    <p>
+                        <label for="DAW">DAW</label>
+                        <input type="checkbox" name="DAW" id="DAW">
+                    </p>
+                    <p>
+                        <label for="EIEM">EIEM</label>
+                        <input type="checkbox" name="EIEM" id="EIEM">
+                    </p>
+
+                    <h1>Probabilidad de aprobar</h1>
+                    <p>
+                        <label for="porcentaje">Porcentaje</label>
+                        <input type="number" name="porcentaje" size="2" min="0" max="100" step="10" value="50">
+                    </p>
+                    
+
+                </fieldset>
+
+                
+                    <p class="parrafo">
+                        <input type="submit" value="Enviar Formulario">
+                        <input type="reset" value="Resetear Formulario">
+                    </p>
+                
+                   
+    </main>
+    
+    
+
+    
+</body>
+</html>

@@ -151,19 +151,36 @@ img{
     flex-direction:column;
     justify-content: space-between;
 }
-.socials img{
-    width:50px;
-    height:50px;
-    border:none;
-    margin-left:3.5vw;
-    margin-right:2vw;
-    color:rgba(34,13,73,0.8);
-    border-radius:0%;
+.big .socials i{
+    font-size:3.5vw;
+    margin-top:0.5vw;
+    margin-left:4vw;
+    text-align:justify;
+}
+.mid .socials i{
+    font-size:3.5vw;
+    margin-top:0.5vw;
+    margin-left:4vw;
+    text-align:justify;
+    
+}
+
+.lit .socials i{
+    font-size:2.5vw;
+    margin-left:1vw;
+    margin-top:0.5vw;
+}
+.jeff .socials i{
+    font-size:2.5vw;
+    margin-left:1vw;
+    margin-top:1vw;
 }
 .socials{
+    color:black;
+    position:relative;
     width:100%;
-    opacity:0;
-    transform:rotatex(70deg);
+    opacity:1;
+    transform:rotatex(-90deg);
 }
 
 .tarjeta:hover .socials{
@@ -172,8 +189,8 @@ img{
     transition-duration:1s;
     
 }
-.socials img:hover{
-    filter: invert(100%);
+.socials i:hover{
+    color:white;
     cursor: pointer;
 }
 

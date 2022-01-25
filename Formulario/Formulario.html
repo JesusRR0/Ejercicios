@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi primer formulario HTML con diferentes tipos de entrada">
+    <meta name="author" content="Jesús Ruiz Rodríguez">
+    <meta name="lang" content="es-ES">
+    <meta name="keywords" content="html, html5, formulario, diseño, diseño de interfaces, interfaz, desarrollo de aplicaciones web, programacion">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulario de mi página web</title>
+    <link rel="stylesheet" href="./estilosForm.css">
+</head>
+<body>
+                                                                                                         
+    <main id ="contenido">
+        <form name="miformulario" method="post" action="form.php">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="nombre">Nombre: </label>
+                    <input  type="text" name="nombre" id="nombre" size="15">
+                </p>
+                <p>
+                    <label for="apellido">Apellidos: </label>
+                    <input  type="text" name="apellido" id="apellido" size="40">                                                                                   
+                </p>
+                <p>
+                    <label for="fnac">Fecha de nacimiento: </label>
+                    <input type="date" name="fnac" id="fnac" value="2002-08-03">
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Género</legend>
+                        <p>
+                            <label for="genero">Hombre</label>
+                            <input type="radio" name="genero" id="male" value="M">
+                        </p>
+
+                        <p> 
+                            <label for="genero">Mujer</label>   
+                            <input type="radio" name="genero" id="female" value="F">
+                        </p>
+                        <p>
+                            <label for="genero">Otro</label>   
+                            <input type="radio" name="genero" id="otro" value="O" checked>
+                        </p>
+                        <p>
+                            <label for="correo">Direccion de correo electronico: </label>
+                            <input type="email" name="correo" id="correo" size="30">
+                        </p>
+                        <p>
+                            <label for="web">Página web personal: </label>
+                            <input type="url" name="web" id="web" size="40">
+                        </p>
+                        <p>
+                            <label for="tlf">Telefono personal: </label>
+                            <input type="tel" name="tlf" id="tlf" size="40">
+                        </p>
+                        <p>
+                            <label for="pass">Contraseña altamente secreta: </label>
+                            <input type="password" name="pass" id="pass" size="pass">
+                        </p>
+                        <p>
+                            <label for="descripcion">Descripcion de tu horario:</label>
+                            <textarea name="descripcion" id="descripcion" cols="5" rows="5"></textarea>
+                        </p>
+                    
+                            
+                            
+                        
+                        
+                    </fieldset>
+                    
+                </p>   
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <p>
+                    <label for="numfav">Mi numero par favorito es: </label>
+                    <input type="number" name="numfav" id="numfav" size="5" min="0" max="100" step="2" value="4">
+                </p>
+
+                <fieldset>
+                    <legend>Intereses Personales:</legend>
+                    <p>
+                        <label for="dep">Deporte</label>
+                        <input type="checkbox" name="dep" id="deporte" value="d">
+                    </p>
+                    <p>
+                        <label for="music">Musica</label>
+                        <input type="checkbox" name="music" id="musica" value="m" checked>
+
+                    </p>
+                    <p>
+                        <label for="vid">Videojuegos</label>
+                        <input type="checkbox" name="vid" id="vid" value="vid" checked>
+                    </p>
+                    <p>
+                        <label for="lec">Lectura</label>
+                        <input type="checkbox" name="lec" id="lec" value="lec">
+                    </p>
+                      
+                        
+                </fieldset>
+                <p>
+                    <label for="turno">Turno de Trabajo: </label>
+                    <select name="turno" id="turno">
+                        
+                        <option value="mañana"selected>Turno de mañana</option>
+                        <option value="tarde" >Turno de tarde</option>
+                        <option value="noche">Turno de noche</option>
+
+                    </select>
+                </p>    
+                <p>
+                    <label for="ciudad">Ciudad</label>
+                    <select name="ciudad" id="ciudad">
+                        <optgroup label="Andalucia">
+                            
+                            <option value="M" selected>Málaga</option>
+                            <option value="C">Cadiz</option>
+                            <option value="S">Sevilla</option>
+
+                        </optgroup>
+                        <optgroup label="Galicia">
+
+                            <option value="O">Coruña</option>
+                            <option value="P">Pontevedra</option>
+                            <option value="L">Lugo</option>
+                        </optgroup>
+                       
+                    </select>
+
+                </p>
+                <p>
+                    <label for="marcas">Marca de Teléfono Móvil favorita: </label>
+                    <input type="text" list="marcas"> 
+                    <datalist id="marcas" name="marcas">
+                        <option value="Apple">Apple</option>
+                        <option value="Android">Android</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Motorola">Motorola</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="color">Mi color favorito es:</label>
+                    <input type="color" name="colores" id="colores" value="#33AAFF">
+
+                </p>
+                <p>
+                    <label for="escala">Mi nivel de satisfaccion con la asignatura es:</label>
+                    <input type="range" name="escala" id="escala" min="0" max="100" value="80">
+                </p>
+                
+            </fieldset>
+            <fieldset>
+                
+                
+                <!--   
+                <p>
+                    <label for="Ejercicio1">Ejercicio1: </label>
+                    <input type="text" id="ejercicio1" name="ejercicio1" required pattern="(?={8,}$)([A-Z][13579].*[a-z]{2})">
+                </p>
+                <p>
+                    <label for="ejercicio2">Ejercicio2: </label>
+                    <input type="text" id="ejercicio2" name="ejercicio2" required pattern="[a-zA-Z]{1,2}*@[^6-9\s]*[0-5]">
+                </p>
+                <p>
+                    <label for="ejercicio3">Ejercicio3: </label>
+                    <input type="text" id="ejercicio3" name="ejercicio3" required pattern="[2468]([13579]\.?[02468])*[1357]">
+                </p>
+                <p>
+                    <label for="ejercicio4">Ejercicio4: </label>
+                    <input type="text" id="ejercicio4" name="ejercicio4" required pattern="[b-df-hj-np-tv-z]*([aeiou][b-df-hj-np-tv-z]+){2}[aeiou][b-df-hj-np-tv-z]*">
+                </p>
+                
+                <p>
+                    <label for="ejercicio5">Ejercicio5: </label>
+                    <input type="text" id="ejercicio5" name="ejercicio5" required pattern="(?=.{8,}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*">
+                
+                <p>
+                    <label for="ejercicio6">Ejercicio6: </label>
+                    <input type="text" id="ejercicio6" name="ejercicio6" required pattern="(?!.*(00|11|22|33|44|55))[0-5]{5}">
+                </p>
+                    
+                <p>
+                    <label for="ejercicio7">Ejercicio7: </label>
+                    <input type="text" id="ejercicio7" name="ejercicio7" required pattern="(?={6}$)(?!.*[aeiou][aeiou][AEIOU])([AEIOU][AEIOU|aeiou]*[aeiou])">
+                </p>
+                
+                <p>
+                    <label for="ejercicio8">Ejercicio4: </label>
+                    <input type="text" id="ejercicio8" name="ejercicio8" required pattern="(?=.{6,}$)(?!.*([0-9][0-9])|([az-AZ][az-AZ]))\w+">
+                </p>
+                
+                <p>
+                    <label for="ejercicio9">Ejercicio9: </label>
+                    <input type="text" id="ejercicio9" name="ejercicio9" required pattern="(?=.{6,8}$)[0-9]*([A-Z]([0-9][0-9]+))*[A-Z]([0-9]+[02468])">
+                </p>
+                
+                <p>
+                    <label for="ejercicio10">Ejercicio10: </label>
+                    <input type="text" id="ejercicio10" name="ejercicio10" required pattern="(?=.{3,6}$)(?=.*[0-5])(?=.*[aeiou])(?!.*[a0|e0|i0|o0|u0])[a-z0-9]+">
+                </p>
+                
+
+                <p>
+                    <label for="ejercicio11">Ejercicio11: </label>
+                    <input type="text" id="ejercicio11" name="ejercicio11" required pattern="(?=.{2,5}$)(?=.*(00|11|22|33|44|55|66|77|88|99))(?!.*[aeiouAEIOU][aeiouAEIOU][aeiouAEIOU])\w+">
+                </p>
+                
+                -->
+                
+
+            </fieldset>
+
+
+                <p>
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </p>
+
+        </form>
+    </main>
+</body>
+</html>

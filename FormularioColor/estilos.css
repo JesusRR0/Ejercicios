@@ -1,0 +1,87 @@
+html{
+    background-color:paleturquoise;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+main>h1{
+    text-align: center;
+    color:royalblue;
+}
+input{
+    background-color:mistyrose;
+}
+input[placeholder]{
+    color:mediumvioletred;
+    font-style: italic;
+}
+legend{
+    color:royalblue;
+    font-size: 15px;
+    font-weight: bold;
+}
+fieldset{
+    background-color: lavender;
+    margin:auto;
+    width: 90%;
+}
+fieldset h1{
+    color:mediumvioletred;
+}
+fieldset fieldset{
+    background-color:peachpuff;
+    width: 60%;
+    margin:0;
+}
+
+fieldset fieldset:last-of-type   {
+    color:green;
+}
+.Postal{
+    color:green;
+}
+.inputP[required]{
+    
+    background-color: tomato;
+}
+div{
+    width:90%;
+}
+
+
+input[type="submit"]{
+    color:royalblue;
+    background-color: lemonchiffon;
+    height:35px;
+    border-radius: 10px;
+}
+
+input[type="reset"]{
+    color:gray;
+    background-color: lemonchiffon;
+    height:35px;
+    border-radius: 10px;
+}
+
+.parrafo{
+    
+    text-align: center;
+    
+}
+input:checked+label[for="edad"]{
+    color:darkgreen ;
+}
+input+label[for="color"]{
+    color:rebeccapurple;
+}
+input:checked+label[for="color"]{
+    color:darkgreen ;
+}
+input[type="radio"]:hover{
+    box-shadow: 0px 0px 10px green;
+}
+fieldset input[type="checkbox"]:checked{
+    box-shadow: 2px 2px 2px orange;
+}
+
+
