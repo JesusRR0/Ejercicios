@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color: gold;
+}
+body{
+    background-color:rgba(220,220,220,0.8);
+    margin:auto;
+    margin-top:7vw;
+    width:38%;
+    height:50vh;
+    border:2px solid teal;
+    
+}
+
+h1{
+    color:teal;
+    text-align: center;
+}
+
+.dias{
+    display:grid;
+    margin:1vw;
+    background-color: crimson;
+    grid-template-columns: repeat(7,5vw);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.dias div{
+    text-align: center;
+    color:black;
+    margin:0.5vw;
+    padding:0.5vw;
+}
+
+.container{
+    margin:1vw;
+    display:grid;
+    grid-template-rows:repeat(5,1fr);
+    grid-template-columns: repeat(7,5vw);
+    
+}
+.container div{
+    color:white;
+    margin:0.5vw;
+    text-align: center;
+    border:1px solid red;
+    color:black;
+    border-radius: 10px;
+    box-shadow:7px 7px 5px gray;
+    height:2vw;
+    padding:0.5vw;
+}
+.c1{
+    grid-column-start:3;
+}
+.l{
+    padding-left:2vw;
+    margin:1vw;
+}
+.normal{
+    background-color: gold;
+}
+.festi{
+    background-color: pink;
+}
