@@ -62,6 +62,9 @@ h1{
     padding-left:2vw;
     margin:1vw;
 }
+.finde{
+    background-color: crimson;
+}
 .normal{
     background-color: gold;
 }
