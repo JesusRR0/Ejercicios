@@ -8,21 +8,23 @@ html{
     background-repeat: no-repeat;
     width:100%;height:100%;
     background-size:cover;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
 
 body{
-    background-color:rgba(220,220,220,0.8);
+    background-color:rgba(220,220,220,0.85);
     margin:auto;
     margin-top:7vw;
     width:38%;
     height:50vh;
-    border:3px solid teal;
+    border:3px solid #009FFD;
     
 }
 
 h1{
     padding-top:0.5vw;
-    color:teal;
+    color:#009FFD;
     text-align: center;
 }
 
@@ -68,43 +70,43 @@ h1{
     margin:1vw;
 }
 .finde{
-    background-color: #BBFEBA;
+    background-color: #2A2A72;
     font-weight: bold;
 }
 .pfinde{
-    color:darkgreen;
+    color:lightblue;
 }
 .normal{
-    background-color:#F598DE;
+    background-color:#EAF6FF;
     
 }
 .pnormal{
-    color:purple;
+    color:#009FFD;
 }
 .festi{
     font-weight: bold;
-    background-color:#8EEDF5;
+    background-color:#FFA400;
 }
 .pfesti{
-    color:darkblue;
+    color:purple;
 }
 .finde:hover{
-    background-color: darkgreen;
+    background-color: lightblue;
 }
 .finde:hover .pfinde{
-    color:#BBFEBA;
+    color:#2A2A72;
 }
 .normal:hover{
-    background-color:purple;
+    background-color:#009FFD;
 }
 .normal:hover .pnormal{
-    color:#F598DE;
+    color:#EAF6FF;
 }
 
 .festi:hover{
     
-    background-color:darkblue;
+    background-color:purple;
 }
 .festi:hover .pfesti{
-    color:#8EEDF5;
+    color:#FFA400;
 }
